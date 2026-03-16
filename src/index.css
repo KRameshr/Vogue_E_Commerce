@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Bold Geometric Sans (Titles) */
+  --font-family-display: "Jost", sans-serif;
+  /* Functional Modern Sans (UI/Body) */
+  --font-family-body: "Inter", sans-serif;
+
+  /* Editorial Color Palette */
+  --color-noir: #000000;
+  --color-chalk: #ffffff;
+  --color-smoke: #fafafa; /* Very light background for copyright bar */
+  --color-stone: #eeeeee; /* Crisp hairline dividers */
+  --color-mist: #666666; /* Muted metadata (dates, secondary links) */
+
+  /* Specific Vogue Spacing */
+  --letter-spacing-vogue: 0.1em;
+  --letter-spacing-widest: 0.2em;
+}
+
+@layer base {
+  body {
+    background-color: white;
+    color: black;
+    font-family: var(--font-family-body);
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Main Section Headers (From the Journal / Follow Our Instagram) */
+  h2 {
+    font-family: var(--font-family-display);
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Journal Card Titles */
+  h3 {
+    font-family: var(--font-family-display);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  /* Footer Navigation Headers */
+  h4 {
+    font-family: var(--font-family-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-widest);
+    font-size: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hairline borders as seen in screenshots */
+  hr,
+  .border-t {
+    border-color: var(--color-stone);
+  }
+}
+
+@layer utilities {
+  /* Editorial Metadata (Dates above Journal titles) */
+  .meta-text {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-mist);
+    margin-bottom: 0.75rem;
+    display: block;
+    text-align: center;
+  }
+
+  /* Button Style: Follow Us @store */
+  .btn-editorial {
+    border: 1px solid black;
+    padding: 12px 32px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  .btn-editorial:hover {
+    background: black;
+    color: white;
+  }
+
+  /* Image Container for Insta Grid */
+  .insta-zoom {
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+  .insta-zoom img {
+    filter: grayscale(100%);
+    transition:
+      transform 0.8s cubic-bezier(0.2, 0, 0.2, 1),
+      filter 0.8s ease;
+  }
+  .insta-zoom:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+  }
+}
