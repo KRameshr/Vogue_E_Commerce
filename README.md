@@ -1,16 +1,122 @@
-# React + Vite
+# Vogue E-Commerce – Premium Fashion Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **fashion e-commerce storefront** built with **React.js and Tailwind CSS**.
+This project focuses on a **luxury editorial-style UI**, inspired by high-end fashion websites, delivering a clean shopping experience with dynamic product filtering and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#  Features
 
-## React Compiler
+### 🧭 Modern Navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Sticky navigation bar
+* Mobile responsive menu
+* Clean and minimal UI layout
 
-## Expanding the ESLint configuration
+### 🔎 Product Filtering & Sorting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Filter products by **category**
+* Filter by **size**
+* Filter by **color**
+* Filter by **price range**
+* Instant UI updates using **React Hooks**
+
+### 📱 Responsive Design
+
+* Fully optimized for **desktop, tablet, and mobile**
+* Mobile **filter drawer** for smaller screens
+
+### 🧩 Dynamic Product Grid
+
+* Promotional banners integrated within product listings
+* Modern card-based product layout
+
+### ⚡ Optimized Component Architecture
+
+* Modular React components
+* Centralized product data
+* Clean folder structure for scalability
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* React Router DOM
+
+### Libraries
+
+* React Icons
+* Axios
+
+### State Management
+
+* React Hooks
+
+---
+
+# 📂 Project Structure
+
+src
+┣ components
+┃ ┣ Navbar.jsx
+┃ ┣ Hero.jsx
+┃ ┣ ProductCard.jsx
+┃ ┣ ProductGrid.jsx
+┃ ┣ Categories.jsx
+┃ ┣ Cart.jsx
+┃ ┗ Footer.jsx
+┣ pages
+┣ data
+┣ assets
+┗ App.jsx
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository
+
+```
+git clone https://github.com/KRameshr/vogue-ecommerce
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the project
+
+```
+npm run dev
+```
+
+Build for production
+
+```
+npm run build
+```
+
+---
+
+# 🌟 Future Improvements
+
+* Add **shopping cart functionality**
+* Implement **user authentication**
+* Backend integration with **Node.js / Express**
+* Payment gateway integration
+
+---
+
+# 👨‍💻 Author
+
+**Kuruba Ramesh**
+
+GitHub
+https://github.com/KRameshr
+
